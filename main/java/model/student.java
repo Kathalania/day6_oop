@@ -1,3 +1,5 @@
+package model;
+
 public class student {
 
     // Variablen werden auf private gesetzt
@@ -43,5 +45,16 @@ public class student {
 
     public void setEnrolled(boolean newEnrolled){
         enrolled = newEnrolled;
+    }
+
+    public String toString(){
+        return degree + " " + university + " " + semester + " " + enrolled;
+    }
+
+    // Neuen Studenten anlegen
+    public student(String degree, String university, int semester){
+        this.degree = degree;
+        this.university = university;
+        this.semester = semester;
     }
 }
